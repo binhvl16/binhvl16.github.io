@@ -14,81 +14,32 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    function showDeviceWidth() {
-      var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-      alert("Device width: " + width);
-    };
-    $(document).ready(function() {
-      showDeviceWidth();
-    })
-  </script>
+  <link href="..\css\style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
-      <div class="col-xs-1">.col-xs-1</div>
+  <div class="container">
+    <div class="image-section">
+      <h2>Rounded Corners</h2>
+      <p>The <code>.img-rounded</code> class add rounded corners to an image (not available in IE8) </p>
+      <img src="..\images\nature.jpg" class="img-rounded" alt="Nature" width="304" height="236">
     </div>
-    <div class="row ">
-      <div class="col-sm-1 " style="background-color:lavender; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavenderblush; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavender; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavender; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavenderblush; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavender; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavender; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavenderblush; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavender; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavender; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavenderblush; ">.col-sm-1</div>
-      <div class="col-sm-1 " style="background-color:lavender; ">.col-sm-1</div>
+    <div class="image-section">
+      <h2>Circle</h2>
+      <p>The <code>.img-circle</code> class shapes the image to a circle (not available in IE8). </p>
+      <img src="..\images\nature1.jpeg" class="img-circle" alt="Nature" width="304" height="236">
     </div>
-    <div class="row">
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
+    <div class="image-section">
+      <h2>Thumbnail</h2>
+      <p>The <code>.img-thumnail</code> class shapes the image to a thumbnail.</p>
+      <img src="..\images\nature.jpg" class="img-thumnail" alt="Nature" width="304" height="236">
     </div>
-    <div class="row">
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-1" style="background:orange;">.col-lg-1</div>
-      <div class="col-lg-2" style="background:green;">.col-lg-2</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-1">
-        col-xs-1
-      </div>
-      <div class="col-lg-11" style="background:pink;">
-        col-lg-11
-      </div>
+    <div class="image-section">
+      <h2>Responsive Images</h2>
+      <p>Responsive images automatically adjust to fit the size of the screen.</p>
+      <p>Create responsive images by adding an <code>.img-responsive</code> class to the <code>img</code> tag. The image will then scale nicely to the parent element.</p>
+      <p>The <code>.img-responsive</code> class applies <code>display: block;</code> and <code>max-width: 100%;</code> and <code>height: auto;</code> to the image: </p>
+      <img src="..\images\nature.jpg" class="img-responsive" alt="Nature" width="460" height="345">
     </div>
   </div>
 </body>
