@@ -634,6 +634,7 @@ input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
   height: 60px;
   display: flex;
   justify-content: center;
+  line-height: 36px;
   align-items: center;
   background: #DD4B39;
   border: 1px #DD4B39 dashed;
