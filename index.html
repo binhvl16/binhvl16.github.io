@@ -16,12 +16,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function hidePanel() {
+      $('#overlayPnl').css("display", "none");
+    }
+
+    function showPanel() {
+      console.log("showPanel - Begin");
+      $('#overlayPnl').animate({
+        width: 'toggle'
+      });
+      console.log("showPanel - End");
+    }
+
+    $(document).ready(function() {
+      $('.btn-hamburger').click(showPanel);
+      $('#overlayPnl').click(hidePanel);
+    });
+  </script>
 </head>
 
 <body>
   <div class="container">
+    <div class="row">
+      <div id="overlayPnl" class="col-xs-8">
+        <p>Menu Item</p>
+        <p>Menu Item</p>
+        <p>Menu Item</p>
+      </div>
+    </div>
+  </div>
+  <div class="container main-content">
     <div class="row header">
-      <div class="col-xs-12 header-title">This is Header</div>
+      <div class="col-xs-1">
+        <button type="button" class="btn btn-default btn-xs btn-hamburger" type="button" data-toggle="collapse" data-target="#demo">
+      <!-- <span class="glyphicon glyphicon-menu-hamburger"></span> -->
+      <span class="glyphicon glyphicon-menu-hamburger hamburger"></span>
+      </div>
+      <div class="col-xs-11 header-title">This is Header</div>
     </div>
     <ul class="list-group row nav">
       <li class="col-xs-3">
@@ -42,7 +74,7 @@
         <input type="date" class="col-xs-8 common-height">
       </div>
       <div class="row">
-        <label class="col-xs-4 label-type common-height">Abcdefg Hiklm</label>
+        <label class="col-xs-4 label-type common-height">The second field</label>
         <select class="col-xs-5 common-height">
           <option value="opt1">Option 1</option>
           <option value="opt2">Option 2</option>
