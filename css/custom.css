@@ -853,7 +853,7 @@ input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
 }
 
 .hamburger {
-  font-size: 40px;
+  font-size: 25px;
   margin: 0px;
   width: 100%;
 }
